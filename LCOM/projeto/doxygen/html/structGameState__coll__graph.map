@@ -1,0 +1,6 @@
+<map id="GameState" name="GameState">
+<area shape="rect" id="node2" href="$structBitmap.html" title="Bitmap" alt="" coords="9,5,72,32"/>
+<area shape="rect" id="node5" href="$structMario.html" title="Mario" alt="" coords="93,96,148,123"/>
+<area shape="rect" id="node3" href="$structPipe.html" title="Pipe" alt="" coords="173,96,221,123"/>
+<area shape="rect" id="node4" href="$structScore.html" title="Score" alt="" coords="245,96,301,123"/>
+</map>

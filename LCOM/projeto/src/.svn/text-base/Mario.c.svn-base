@@ -1,0 +1,102 @@
+# include "Mario.h"
+
+#include <stdio.h>
+#include <time.h>
+#include <stdlib.h>
+#include <minix/drivers.h>
+
+#include <minix/sysutil.h>
+#include <minix/syslib.h>
+#include <minix/drivers.h>
+#include <minix/driver.h>
+
+#include <stdint.h>
+#include <machine/int86.h>
+
+#include "video_gr.h"
+#include "kbd.h"
+
+
+
+Mario* createMario() {
+
+	Mario* mario = (Mario*) malloc(sizeof(Mario));
+
+	mario->timer_irq = timer_subscribe_int();
+	mario->kbd_irq = kbd_subscribe_int();
+
+	mario->done = 0;
+	//mario->draw = 1;
+
+	mario->scancode = 0;
+
+	mario->x = 12;
+	mario->y = 12;
+	mario->size = 50;
+	mario->timer = createTimer();
+
+	//mario->background = loadBitmap("/home/lcom/projeto/src/images/mario.bmp");
+
+	return mario;
+
+}
+
+void updateMario(Mario* mario) {
+	int ipc_status, r = 0;
+	message msg;
+	if (driver_receive(ANY, &msg, &ipc_status) != 0)
+		return;
+
+	if ((r = driver_receive(ANY, &msg, &ipc_status)) != 0) {
+		printf("driver_receive failed with: %d\n", r);
+		return;
+	}
+	if (is_ipc_notify(ipc_status)) {
+		switch (_ENDPOINT_P(msg.m_source)) {
+		case HARDWARE:
+			if (msg.NOTIFY_ARG & mario->kbd_irq) {
+				mario->scancode = kbd_handler_scan() ;
+				//printf("tecla premida %x \n" , mario->scancode );
+				//print_code(key);
+			}
+			if (msg.NOTIFY_ARG & mario->timer_irq) {
+				timerHandler(mario->timer);
+			}
+			break;
+		default:
+			break;
+		}
+	}
+
+
+	if (mario->scancode == KEY_ESC)
+		mario->done =1;
+
+
+	if (mario->timer->counter % 30 == 0) {
+		mario->x += 12;
+		mario->y += 12;
+
+		printf("timer tick \n");
+	}
+
+
+}
+
+void drawMario(Mario* mario) {
+	//clear_screen(0);
+
+	draw_square(mario->x, mario->y, mario->size, 2);
+
+	//drawBitmap(mario->background, 0, 0, ALIGN_LEFT);
+
+}
+
+void deleteMario(Mario* mario) {
+
+	timer_unsubscribe_int();
+	kbd_unsubscribe_int();
+	deleteTimer(mario->timer);
+	free(mario);
+}
+

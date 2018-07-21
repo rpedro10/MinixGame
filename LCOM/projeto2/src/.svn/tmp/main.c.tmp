@@ -1,0 +1,135 @@
+#include <stdio.h>
+//#include <timer.h>
+#include <stdlib.h>
+#include <minix/drivers.h>
+
+#include "video_gr.h"
+#include "Mario.h"
+
+int main(int argc, char **argv) {
+	/* Initialize service */
+	sef_startup();
+
+	sys_enable_iop(SELF);
+
+	vg_init(0x117); // 0x105 = 1024x768 256 colours, 0x117 = 1024x768 16-bit colours 
+
+	Mario* mario = (Mario*) createMario();
+<<<<<<< .mine
+	vg_init(0x115);
+	int i = 0;
+=======
+>>>>>>> .r113
+
+<<<<<<< .mine
+	//clear_screen(0);
+
+	drawMario(mario);
+	sleep(2);
+/**
+	while (i<300) {
+		updateMario(mario);
+		clear_screen(0);
+		drawMario(mario);
+		i++;
+=======
+	int ipc_status;
+	message msg;
+	int r;
+>>>>>>> .r113
+
+	int dummy;
+
+	while (mario->scancode != KEY_ESC) { /* You may want to use a different condition */
+		/* Get a request message. */
+		if ((r = driver_receive(ANY, &msg, &ipc_status)) != 0) {
+			printf("driver_receive failed with: %d\n", r);
+			continue;
+		}
+		if (is_ipc_notify(ipc_status)) { /* received notification */
+			switch (_ENDPOINT_P(msg.m_source)) {
+			case HARDWARE: /* hardware interrupt notification */
+				if (msg.NOTIFY_ARG & mario->timer_irq) {
+					//clear_screen(3);
+					drawMario(mario);
+					timerHandler(mario->timer);
+					updateMario(mario);
+				}
+				if (msg.NOTIFY_ARG & mario->kbd_irq) { /* subscribed interrupt */
+					mario->scancode = kbd_handler_scan();
+					print_code(mario->scancode, &dummy);
+
+					updateMarioKbd(mario);
+					
+				}
+
+				break;
+			default:
+				break; /* no other notifications expected: do nothing */
+			}
+
+		}
+
+	}
+
+<<<<<<< .mine
+*/
+	sleep(3);
+	 deleteMario(mario);
+	printf("exit \n");
+	kbd_unsubscribe_int();
+		timer_unsubscribe_int();
+=======
+>>>>>>> .r113
+
+<<<<<<< .mine
+=======
+	// deleteMario(mario);
+
+>>>>>>> .r113
+	//clear_screen(900);
+	printf("exit2 \n");
+
+<<<<<<< .mine
+=======
+	//draw_square(0,0,20,999);
+
+	// unsigned long scancode;
+
+>>>>>>> .r113
+	// int kbd_irq = kbd_subscribe_int();
+
+	// while (scancode != KEY_ESC) { /* You may want to use a different condition */
+	// 	/* Get a request message. */
+	// 	if ((r = driver_receive(ANY, &msg, &ipc_status)) != 0) {
+	// 		printf("driver_receive failed with: %d\n", r);
+	// 		continue;
+	// 	}
+	// 	if (is_ipc_notify(ipc_status)) { /* received notification */
+	// 		switch (_ENDPOINT_P(msg.m_source)) {
+	// 		case HARDWARE: /* hardware interrupt notification */
+	// 			if (msg.NOTIFY_ARG & kbd_irq) { /* subscribed interrupt */
+	// 				scancode = kbd_handler_scan();
+	// 			}
+
+	// 			break;
+	// 		default:
+	// 			break; /* no other notifications expected: do nothing */
+	// 		}
+
+	// 	}
+
+	// }
+
+	vg_exit();
+
+	return 0;
+
+
+	// TO DO:
+	// 1 - Verificar porque e que o clear_screen da segmentation fault. No modo 0x117 deu erro em x = 1023 e y = 767. Meti para dar ate esse valor.
+	// 2 - Fazer o menu
+	// 3 - Ver o mario.size
+	// 4 - Ver porque e que o mario nao cai
+
+}

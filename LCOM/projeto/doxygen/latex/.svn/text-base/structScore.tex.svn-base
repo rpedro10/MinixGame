@@ -1,0 +1,25 @@
+\hypertarget{structScore}{}\section{Score Struct Reference}
+\label{structScore}\index{Score@{Score}}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries value}\hypertarget{structScore_a43673f1f88d6d44ae71b98116f33c9ed}{}\label{structScore_a43673f1f88d6d44ae71b98116f33c9ed}
+
+\item 
+char {\bfseries name} \mbox{[}4\mbox{]}\hypertarget{structScore_aaedadfca0777f0b02a0693f7bc33d948}{}\label{structScore_aaedadfca0777f0b02a0693f7bc33d948}
+
+\item 
+unsigned long {\bfseries day}\hypertarget{structScore_a56ec2b2e99dbbb4a50fc5918f671e92c}{}\label{structScore_a56ec2b2e99dbbb4a50fc5918f671e92c}
+
+\item 
+unsigned long {\bfseries month}\hypertarget{structScore_a2e3a5ba3d59db44ce06669644f5d0021}{}\label{structScore_a2e3a5ba3d59db44ce06669644f5d0021}
+
+\item 
+unsigned long {\bfseries year}\hypertarget{structScore_ac8b7159609235b1cf0bbe6f82a3e0db3}{}\label{structScore_ac8b7159609235b1cf0bbe6f82a3e0db3}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/pedro/\+Desktop/svn/src/Score.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,33 @@
+\hypertarget{structRectangle}{}\section{Rectangle Struct Reference}
+\label{structRectangle}\index{Rectangle@{Rectangle}}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{structRectangle_a7f6d033b3bb8dcf7bf8f82044592c904}{x}
+\item 
+int \hyperlink{structRectangle_acfb20b2cecf8c9701fb12fbbfebe6cea}{y}
+\item 
+int \hyperlink{structRectangle_a019ed802523594472e0032953b6062d4}{width}
+\item 
+int \hyperlink{structRectangle_ac564db1ed0dd61dd82a5276399bc72ad}{height}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Data Documentation}
+\index{Rectangle@{Rectangle}!height@{height}}
+\index{height@{height}!Rectangle@{Rectangle}}
+\subsubsection[{\texorpdfstring{height}{height}}]{\setlength{\rightskip}{0pt plus 5cm}int Rectangle\+::height}\hypertarget{structRectangle_ac564db1ed0dd61dd82a5276399bc72ad}{}\label{structRectangle_ac564db1ed0dd61dd82a5276399bc72ad}
+height coordinate of the rectangle \index{Rectangle@{Rectangle}!width@{width}}
+\index{width@{width}!Rectangle@{Rectangle}}
+\subsubsection[{\texorpdfstring{width}{width}}]{\setlength{\rightskip}{0pt plus 5cm}int Rectangle\+::width}\hypertarget{structRectangle_a019ed802523594472e0032953b6062d4}{}\label{structRectangle_a019ed802523594472e0032953b6062d4}
+width coordinate of the rectangle \index{Rectangle@{Rectangle}!x@{x}}
+\index{x@{x}!Rectangle@{Rectangle}}
+\subsubsection[{\texorpdfstring{x}{x}}]{\setlength{\rightskip}{0pt plus 5cm}int Rectangle\+::x}\hypertarget{structRectangle_a7f6d033b3bb8dcf7bf8f82044592c904}{}\label{structRectangle_a7f6d033b3bb8dcf7bf8f82044592c904}
+x coordinate of the rectangle \index{Rectangle@{Rectangle}!y@{y}}
+\index{y@{y}!Rectangle@{Rectangle}}
+\subsubsection[{\texorpdfstring{y}{y}}]{\setlength{\rightskip}{0pt plus 5cm}int Rectangle\+::y}\hypertarget{structRectangle_acfb20b2cecf8c9701fb12fbbfebe6cea}{}\label{structRectangle_acfb20b2cecf8c9701fb12fbbfebe6cea}
+y coordinate of the rectangle 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/pedro/\+Desktop/svn/src/Main\+Menu.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,52 @@
+\hypertarget{structMario}{}\section{Mario Struct Reference}
+\label{structMario}\index{Mario@{Mario}}
+
+
+Collaboration diagram for Mario\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=209pt]{structMario__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$ {\bfseries mario\+\_\+buf}\hypertarget{structMario_a87ef03068e4b27222a4382f16d6737cd}{}\label{structMario_a87ef03068e4b27222a4382f16d6737cd}
+
+\item 
+int {\bfseries done}\hypertarget{structMario_ac356a194a42781bd6860663fda999834}{}\label{structMario_ac356a194a42781bd6860663fda999834}
+
+\item 
+int {\bfseries draw}\hypertarget{structMario_a9c9f2d2e801d1680b64dfa627c713042}{}\label{structMario_a9c9f2d2e801d1680b64dfa627c713042}
+
+\item 
+\hyperlink{structBitmap}{Bitmap} $\ast$ {\bfseries background}\hypertarget{structMario_a6e36b388e2610cb9af195f05a5e0d93a}{}\label{structMario_a6e36b388e2610cb9af195f05a5e0d93a}
+
+\item 
+int {\bfseries x}\hypertarget{structMario_ac2d3305a2cc90782a8d37379ba6cdf7b}{}\label{structMario_ac2d3305a2cc90782a8d37379ba6cdf7b}
+
+\item 
+int {\bfseries y}\hypertarget{structMario_aaf89af6928473a3413248355270bf064}{}\label{structMario_aaf89af6928473a3413248355270bf064}
+
+\item 
+int {\bfseries size}\hypertarget{structMario_ac8a021d67049cc6c3a58892cbf3a16f9}{}\label{structMario_ac8a021d67049cc6c3a58892cbf3a16f9}
+
+\item 
+int {\bfseries draw\+Size}\hypertarget{structMario_a25bf8be536577d81da72c7272090ade7}{}\label{structMario_a25bf8be536577d81da72c7272090ade7}
+
+\item 
+int {\bfseries jump\+\_\+height}\hypertarget{structMario_afd661aa7602503cbf9a4d33459627e91}{}\label{structMario_afd661aa7602503cbf9a4d33459627e91}
+
+\item 
+int {\bfseries ascending}\hypertarget{structMario_aa915b2e693536ff0d976983a33c51675}{}\label{structMario_aa915b2e693536ff0d976983a33c51675}
+
+\item 
+int {\bfseries lower\+\_\+bound}\hypertarget{structMario_afc7f287b9c802a0206696e99856f3ebf}{}\label{structMario_afc7f287b9c802a0206696e99856f3ebf}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/pedro/\+Desktop/svn/src/Mario.\+h\end{DoxyCompactItemize}

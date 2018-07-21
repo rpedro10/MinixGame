@@ -1,0 +1,213 @@
+\hypertarget{group__i8254}{}\section{i8254}
+\label{group__i8254}\index{i8254@{i8254}}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bfseries T\+I\+M\+E\+R\+\_\+\+H\+O\+O\+K\+\_\+\+ID}~2\hypertarget{group__i8254_gacaa139b4a451d80a4cb00da3451edd5b}{}\label{group__i8254_gacaa139b4a451d80a4cb00da3451edd5b}
+
+\item 
+\#define {\bfseries K\+B\+D\+\_\+\+H\+O\+O\+K\+\_\+\+ID}~0\hypertarget{group__i8254_gadcabd5b693735bced4d5867b84dfb027}{}\label{group__i8254_gadcabd5b693735bced4d5867b84dfb027}
+
+\item 
+\#define {\bfseries M\+O\+U\+S\+E\+\_\+\+H\+O\+O\+K\+\_\+\+ID}~1\hypertarget{group__i8254_gab68ffa76160866a0585aead19b67a130}{}\label{group__i8254_gab68ffa76160866a0585aead19b67a130}
+
+\item 
+\#define \hyperlink{group__i8254_gacf926951944b6cf370b7229ebd50dd8b}{T\+I\+M\+E\+R\+\_\+\+F\+R\+EQ}~1193182\hypertarget{group__i8254_gacf926951944b6cf370b7229ebd50dd8b}{}\label{group__i8254_gacf926951944b6cf370b7229ebd50dd8b}
+
+\begin{DoxyCompactList}\small\item\em clock frequency for timer in PC and AT \end{DoxyCompactList}\item 
+\#define {\bfseries B\+IT}(n)~(0x01$<$$<$(n))\hypertarget{group__i8254_ga3a8ea58898cb58fc96013383d39f482c}{}\label{group__i8254_ga3a8ea58898cb58fc96013383d39f482c}
+
+\item 
+\#define \hyperlink{group__i8254_ga30bf84c312af248cb81bb224e09f9ba8}{T\+I\+M\+E\+R0\+\_\+\+I\+RQ}~0\hypertarget{group__i8254_ga30bf84c312af248cb81bb224e09f9ba8}{}\label{group__i8254_ga30bf84c312af248cb81bb224e09f9ba8}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{structTimer}{Timer} 0 I\+RQ line. \end{DoxyCompactList}\item 
+\#define \hyperlink{group__i8254_gacc9ff9df4a9674a1ce9ba08fc4a4679e}{T\+I\+M\+E\+R\+\_\+0}~0x40\hypertarget{group__i8254_gacc9ff9df4a9674a1ce9ba08fc4a4679e}{}\label{group__i8254_gacc9ff9df4a9674a1ce9ba08fc4a4679e}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{structTimer}{Timer} 0 count register. \end{DoxyCompactList}\item 
+\#define \hyperlink{group__i8254_gac62c99c2a9289891c1b83052242cca49}{T\+I\+M\+E\+R\+\_\+1}~0x41\hypertarget{group__i8254_gac62c99c2a9289891c1b83052242cca49}{}\label{group__i8254_gac62c99c2a9289891c1b83052242cca49}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{structTimer}{Timer} 1 count register. \end{DoxyCompactList}\item 
+\#define \hyperlink{group__i8254_ga1f34f18ad0ab8cace46b615773b48735}{T\+I\+M\+E\+R\+\_\+2}~0x42\hypertarget{group__i8254_ga1f34f18ad0ab8cace46b615773b48735}{}\label{group__i8254_ga1f34f18ad0ab8cace46b615773b48735}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{structTimer}{Timer} 2 count register. \end{DoxyCompactList}\item 
+\#define \hyperlink{group__i8254_ga282832448fb0281ef53d243c1cd48491}{T\+I\+M\+E\+R\+\_\+\+C\+T\+RL}~0x43\hypertarget{group__i8254_ga282832448fb0281ef53d243c1cd48491}{}\label{group__i8254_ga282832448fb0281ef53d243c1cd48491}
+
+\begin{DoxyCompactList}\small\item\em Control register. \end{DoxyCompactList}\item 
+\#define \hyperlink{group__i8254_ga51b3a5e3d4811ca063fe25e35560ab40}{S\+P\+E\+A\+K\+E\+R\+\_\+\+C\+T\+RL}~0x61\hypertarget{group__i8254_ga51b3a5e3d4811ca063fe25e35560ab40}{}\label{group__i8254_ga51b3a5e3d4811ca063fe25e35560ab40}
+
+\begin{DoxyCompactList}\small\item\em Register for speaker control. \end{DoxyCompactList}\item 
+\#define \hyperlink{group__i8254_ga6a4822642d40c248435692324a818010}{T\+I\+M\+E\+R\+\_\+\+S\+E\+L0}~0x00\hypertarget{group__i8254_ga6a4822642d40c248435692324a818010}{}\label{group__i8254_ga6a4822642d40c248435692324a818010}
+
+\begin{DoxyCompactList}\small\item\em Control Word for \hyperlink{structTimer}{Timer} 0. \end{DoxyCompactList}\item 
+\#define \hyperlink{group__i8254_ga8349623fd8d99f9cc5d8ae29d78594fc}{T\+I\+M\+E\+R\+\_\+\+S\+E\+L1}~B\+IT(6)\hypertarget{group__i8254_ga8349623fd8d99f9cc5d8ae29d78594fc}{}\label{group__i8254_ga8349623fd8d99f9cc5d8ae29d78594fc}
+
+\begin{DoxyCompactList}\small\item\em Control Word for \hyperlink{structTimer}{Timer} 1. \end{DoxyCompactList}\item 
+\#define \hyperlink{group__i8254_ga142a255de0dbc48aeabd45fc10c33672}{T\+I\+M\+E\+R\+\_\+\+S\+E\+L2}~B\+IT(7)\hypertarget{group__i8254_ga142a255de0dbc48aeabd45fc10c33672}{}\label{group__i8254_ga142a255de0dbc48aeabd45fc10c33672}
+
+\begin{DoxyCompactList}\small\item\em Control Word for \hyperlink{structTimer}{Timer} 2. \end{DoxyCompactList}\item 
+\#define \hyperlink{group__i8254_ga4c2eecbfb96744a9c2af71dba75ecb18}{T\+I\+M\+E\+R\+\_\+\+R\+B\+\_\+\+C\+MD}~(B\+IT(7)$\vert$B\+IT(6))\hypertarget{group__i8254_ga4c2eecbfb96744a9c2af71dba75ecb18}{}\label{group__i8254_ga4c2eecbfb96744a9c2af71dba75ecb18}
+
+\begin{DoxyCompactList}\small\item\em Read Back Command. \end{DoxyCompactList}\item 
+\#define \hyperlink{group__i8254_gac18cb814ebd0d67235392c330e0e3504}{T\+I\+M\+E\+R\+\_\+\+L\+SB}~B\+IT(4)\hypertarget{group__i8254_gac18cb814ebd0d67235392c330e0e3504}{}\label{group__i8254_gac18cb814ebd0d67235392c330e0e3504}
+
+\begin{DoxyCompactList}\small\item\em Initialize Counter L\+SB only. \end{DoxyCompactList}\item 
+\#define \hyperlink{group__i8254_ga2a8a6d363c612d756cd8d78480f7cd04}{T\+I\+M\+E\+R\+\_\+\+M\+SB}~B\+IT(5)\hypertarget{group__i8254_ga2a8a6d363c612d756cd8d78480f7cd04}{}\label{group__i8254_ga2a8a6d363c612d756cd8d78480f7cd04}
+
+\begin{DoxyCompactList}\small\item\em Initialize Counter M\+SB only. \end{DoxyCompactList}\item 
+\#define \hyperlink{group__i8254_ga8c0f1933323274c765e23837e4fbc8c7}{T\+I\+M\+E\+R\+\_\+\+L\+S\+B\+\_\+\+M\+SB}~(\hyperlink{group__i8254_gac18cb814ebd0d67235392c330e0e3504}{T\+I\+M\+E\+R\+\_\+\+L\+SB} $\vert$ \hyperlink{group__i8254_ga2a8a6d363c612d756cd8d78480f7cd04}{T\+I\+M\+E\+R\+\_\+\+M\+SB})\hypertarget{group__i8254_ga8c0f1933323274c765e23837e4fbc8c7}{}\label{group__i8254_ga8c0f1933323274c765e23837e4fbc8c7}
+
+\begin{DoxyCompactList}\small\item\em Initialize L\+SB first and M\+SB afterwards. \end{DoxyCompactList}\item 
+\#define \hyperlink{group__i8254_ga4745cbf21da3d3fea5dbb080b2b73bac}{T\+I\+M\+E\+R\+\_\+\+S\+Q\+R\+\_\+\+W\+A\+VE}~(B\+IT(2)$\vert$B\+IT(1))\hypertarget{group__i8254_ga4745cbf21da3d3fea5dbb080b2b73bac}{}\label{group__i8254_ga4745cbf21da3d3fea5dbb080b2b73bac}
+
+\begin{DoxyCompactList}\small\item\em Mode 3\+: square wave generator. \end{DoxyCompactList}\item 
+\#define \hyperlink{group__i8254_ga5d4449e0fa1cf4a4d107a48a04a1265f}{T\+I\+M\+E\+R\+\_\+\+R\+A\+T\+E\+\_\+\+G\+EN}~B\+IT(2)\hypertarget{group__i8254_ga5d4449e0fa1cf4a4d107a48a04a1265f}{}\label{group__i8254_ga5d4449e0fa1cf4a4d107a48a04a1265f}
+
+\begin{DoxyCompactList}\small\item\em Mode 2\+: rate generator. \end{DoxyCompactList}\item 
+\#define \hyperlink{group__i8254_ga325b992a371d5d981c4eceff42fa5956}{T\+I\+M\+E\+R\+\_\+\+B\+CD}~0x01\hypertarget{group__i8254_ga325b992a371d5d981c4eceff42fa5956}{}\label{group__i8254_ga325b992a371d5d981c4eceff42fa5956}
+
+\begin{DoxyCompactList}\small\item\em Count in B\+CD. \end{DoxyCompactList}\item 
+\#define \hyperlink{group__i8254_gad2913dcf2f91453317bd035589ac0a7d}{T\+I\+M\+E\+R\+\_\+\+B\+IN}~0x00\hypertarget{group__i8254_gad2913dcf2f91453317bd035589ac0a7d}{}\label{group__i8254_gad2913dcf2f91453317bd035589ac0a7d}
+
+\begin{DoxyCompactList}\small\item\em Count in binary. \end{DoxyCompactList}\item 
+\#define {\bfseries T\+I\+M\+E\+R\+\_\+\+R\+B\+\_\+\+C\+O\+U\+NT}~B\+IT(5)\hypertarget{group__i8254_ga59aa6e497b921d8e84f2df9905a657dd}{}\label{group__i8254_ga59aa6e497b921d8e84f2df9905a657dd}
+
+\item 
+\#define {\bfseries T\+I\+M\+E\+R\+\_\+\+R\+B\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+}~B\+IT(4)\hypertarget{group__i8254_ga08b4952bb7058684a3f8f66be04dd45e}{}\label{group__i8254_ga08b4952bb7058684a3f8f66be04dd45e}
+
+\item 
+\#define {\bfseries T\+I\+M\+E\+R\+\_\+\+R\+B\+\_\+\+S\+EL}(n)~B\+IT((n)+1)\hypertarget{group__i8254_gaf598b17740e07842a0545af512714711}{}\label{group__i8254_gaf598b17740e07842a0545af512714711}
+
+\item 
+\#define {\bfseries K\+B\+D\+\_\+\+I\+RQ}~1\hypertarget{group__i8254_ga5c1072213ce8d8cd43628c4319ae0391}{}\label{group__i8254_ga5c1072213ce8d8cd43628c4319ae0391}
+
+\item 
+\#define {\bfseries K\+E\+Y\+\_\+\+E\+S\+C\+\_\+\+M\+A\+KE}~0x01\hypertarget{group__i8254_gaee5b15ee34bf58a5971de6341d9120dc}{}\label{group__i8254_gaee5b15ee34bf58a5971de6341d9120dc}
+
+\item 
+\#define {\bfseries K\+E\+Y\+\_\+\+E\+S\+C\+\_\+\+B\+R\+E\+AK}~0x81\hypertarget{group__i8254_ga691600120070c2471cc6b8be21c59963}{}\label{group__i8254_ga691600120070c2471cc6b8be21c59963}
+
+\item 
+\#define {\bfseries K\+B\+D\+\_\+\+O\+U\+T\+\_\+\+B\+UF}~0x60\hypertarget{group__i8254_gaeff3162e464a9081f73e3765f199d7c1}{}\label{group__i8254_gaeff3162e464a9081f73e3765f199d7c1}
+
+\item 
+\#define {\bfseries K\+B\+D\+\_\+\+W\+R\+I\+T\+E\+\_\+\+C\+O\+M\+M\+A\+ND}~0x60\hypertarget{group__i8254_gacb0157b79ce83f8e923d5753dcf19278}{}\label{group__i8254_gacb0157b79ce83f8e923d5753dcf19278}
+
+\item 
+\#define {\bfseries S\+T\+A\+T\+U\+S\+\_\+\+P\+O\+RT}~0x64\hypertarget{group__i8254_ga923231d2e45aaea2dbab3532b06c2311}{}\label{group__i8254_ga923231d2e45aaea2dbab3532b06c2311}
+
+\item 
+\#define {\bfseries K\+B\+C\+\_\+\+C\+M\+D\+\_\+\+R\+EG}~0x64\hypertarget{group__i8254_ga6d57c7927a10f638c83046b52c8caac9}{}\label{group__i8254_ga6d57c7927a10f638c83046b52c8caac9}
+
+\item 
+\#define {\bfseries E\+N\+A\+B\+L\+E\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+TS}~0x20\hypertarget{group__i8254_ga62b74068f303c78492667e69fe203914}{}\label{group__i8254_ga62b74068f303c78492667e69fe203914}
+
+\item 
+\#define {\bfseries O\+BF}~1\hypertarget{group__i8254_ga45967c9e25447ba853cf6fb4ac545fe6}{}\label{group__i8254_ga45967c9e25447ba853cf6fb4ac545fe6}
+
+\item 
+\#define {\bfseries I\+BF}~B\+IT(1)\hypertarget{group__i8254_ga3c48b10907056351582baf9f6478598e}{}\label{group__i8254_ga3c48b10907056351582baf9f6478598e}
+
+\item 
+\#define {\bfseries P\+A\+R\+\_\+\+E\+RR}~B\+IT(7)\hypertarget{group__i8254_ga307ab71673e26ec42b28a3bca05d4cb5}{}\label{group__i8254_ga307ab71673e26ec42b28a3bca05d4cb5}
+
+\item 
+\#define {\bfseries T\+O\+\_\+\+E\+RR}~B\+IT(6)\hypertarget{group__i8254_gad16f61e2bf70f6c7685e826224ed177f}{}\label{group__i8254_gad16f61e2bf70f6c7685e826224ed177f}
+
+\item 
+\#define {\bfseries S\+P\+C\+L\+\_\+\+K\+EY}~0xe0\hypertarget{group__i8254_gac1f30e40c049bc3815ec693aefd3bfb2}{}\label{group__i8254_gac1f30e40c049bc3815ec693aefd3bfb2}
+
+\item 
+\#define {\bfseries D\+E\+L\+A\+Y\+\_\+\+US}~20000\hypertarget{group__i8254_ga1a522aa19bcb695a9df30032a893bee3}{}\label{group__i8254_ga1a522aa19bcb695a9df30032a893bee3}
+
+\item 
+\#define {\bfseries K\+B\+D\+\_\+\+I\+N\+\_\+\+B\+UF}~0x60\hypertarget{group__i8254_ga4bcf0699d564f2a7481e969bd1e06184}{}\label{group__i8254_ga4bcf0699d564f2a7481e969bd1e06184}
+
+\item 
+\#define {\bfseries M\+O\+U\+S\+E\+\_\+\+I\+RQ}~12\hypertarget{group__i8254_ga85964cb90343bb1a029b1d1b4229f910}{}\label{group__i8254_ga85964cb90343bb1a029b1d1b4229f910}
+
+\item 
+\#define {\bfseries A\+CK}~0x\+FA\hypertarget{group__i8254_ga6f6489887e08bff4887d0bc5dcf214d8}{}\label{group__i8254_ga6f6489887e08bff4887d0bc5dcf214d8}
+
+\item 
+\#define {\bfseries D\+I\+S\+A\+B\+L\+E\+\_\+\+S\+M\+O\+DE}~0x\+F5\hypertarget{group__i8254_ga616f7a069509d8ea10bab4916b640536}{}\label{group__i8254_ga616f7a069509d8ea10bab4916b640536}
+
+\item 
+\#define {\bfseries W\+R\+I\+T\+E\+\_\+\+T\+O\+\_\+\+M\+O\+U\+SE}~0x\+D4\hypertarget{group__i8254_gafa9a46730bdfc6bfc06a0f69ae748f5a}{}\label{group__i8254_gafa9a46730bdfc6bfc06a0f69ae748f5a}
+
+\item 
+\#define {\bfseries E\+N\+A\+B\+L\+E\+\_\+\+P\+A\+C\+K\+E\+TS}~0x\+F4\hypertarget{group__i8254_gac952dd3ee2078e8deaf2a3376e974778}{}\label{group__i8254_gac952dd3ee2078e8deaf2a3376e974778}
+
+\item 
+\#define {\bfseries D\+I\+S\+A\+B\+L\+E\+\_\+\+P\+A\+C\+K\+E\+TS}~0x\+F5\hypertarget{group__i8254_gaf8d5fe624884a8f36b7bf7407b2836aa}{}\label{group__i8254_gaf8d5fe624884a8f36b7bf7407b2836aa}
+
+\item 
+\#define {\bfseries E\+N\+A\+B\+L\+E\+\_\+\+S\+M\+O\+DE}~0x\+EA\hypertarget{group__i8254_ga0a219a8b5e41a06143a4474eb5ba1707}{}\label{group__i8254_ga0a219a8b5e41a06143a4474eb5ba1707}
+
+\item 
+\#define {\bfseries S\+T\+A\+T\+U\+S\+\_\+\+R\+E\+Q\+U\+E\+ST}~0x\+E9\hypertarget{group__i8254_gab74d8cf9ec50650fee5058cb33a9160e}{}\label{group__i8254_gab74d8cf9ec50650fee5058cb33a9160e}
+
+\item 
+\#define {\bfseries E\+N\+A\+B\+L\+E\+\_\+\+R\+E\+M\+O\+T\+E\+\_\+\+M\+O\+DE}~0x\+F0\hypertarget{group__i8254_ga8a3dd723f401f9faba284d0b00a77e13}{}\label{group__i8254_ga8a3dd723f401f9faba284d0b00a77e13}
+
+\item 
+\#define {\bfseries R\+E\+A\+D\+\_\+\+D\+A\+TA}~0x\+EB\hypertarget{group__i8254_ga8d406d5aff787991429e62cfd9bac721}{}\label{group__i8254_ga8d406d5aff787991429e62cfd9bac721}
+
+\item 
+\#define {\bfseries S\+T\+A\+T\+U\+S\+\_\+\+A\+UX}~B\+IT(5)\hypertarget{group__i8254_ga52f9e7630863e10bdc6d834c053b5f10}{}\label{group__i8254_ga52f9e7630863e10bdc6d834c053b5f10}
+
+\item 
+\#define {\bfseries mode1}~0x101\hypertarget{group__i8254_ga9a2c421c977659e1a20f43ad9f35a136}{}\label{group__i8254_ga9a2c421c977659e1a20f43ad9f35a136}
+
+\item 
+\#define {\bfseries mode2}~0x103\hypertarget{group__i8254_ga63231276e0fcd8150890da1546a9eb92}{}\label{group__i8254_ga63231276e0fcd8150890da1546a9eb92}
+
+\item 
+\#define {\bfseries mode3}~0x105\hypertarget{group__i8254_gaa9e1db964b4c2bf8939ada246d5caa0a}{}\label{group__i8254_gaa9e1db964b4c2bf8939ada246d5caa0a}
+
+\item 
+\#define {\bfseries mode4}~0x107\hypertarget{group__i8254_ga3ea9f7899c59ed6b091d000c6371b870}{}\label{group__i8254_ga3ea9f7899c59ed6b091d000c6371b870}
+
+\item 
+\#define {\bfseries T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+C\+O\+L\+O\+UR}~U\+S\+H\+R\+T\+\_\+\+M\+AX\hypertarget{group__i8254_gac3a05e287a62930d99b6fd3260a8dd18}{}\label{group__i8254_gac3a05e287a62930d99b6fd3260a8dd18}
+
+\item 
+\#define {\bfseries R\+T\+C\+\_\+\+A\+D\+D\+R\+\_\+\+R\+EG}~0x70\hypertarget{group__i8254_ga710b98232df2c563009e6f8a6cd18220}{}\label{group__i8254_ga710b98232df2c563009e6f8a6cd18220}
+
+\item 
+\#define {\bfseries R\+T\+C\+\_\+\+D\+A\+T\+A\+\_\+\+R\+EG}~0x71\hypertarget{group__i8254_ga2f258a00c59c3f347c8d2d4a75471ce0}{}\label{group__i8254_ga2f258a00c59c3f347c8d2d4a75471ce0}
+
+\item 
+\#define {\bfseries R\+E\+G\+I\+S\+T\+E\+R\+\_\+A}~10\hypertarget{group__i8254_ga5bca0b9b7966f6562b2e0d31f0406604}{}\label{group__i8254_ga5bca0b9b7966f6562b2e0d31f0406604}
+
+\item 
+\#define {\bfseries R\+E\+G\+I\+S\+T\+E\+R\+\_\+B}~11\hypertarget{group__i8254_ga9935cde70013bbc215f658cfc078b988}{}\label{group__i8254_ga9935cde70013bbc215f658cfc078b988}
+
+\item 
+\#define {\bfseries S\+E\+C\+O\+N\+DS}~0\hypertarget{group__i8254_ga48fcf4f2eeef6769d588168d4ac2ab0e}{}\label{group__i8254_ga48fcf4f2eeef6769d588168d4ac2ab0e}
+
+\item 
+\#define {\bfseries M\+I\+N\+U\+T\+ES}~2\hypertarget{group__i8254_ga84be9dcfa5a172ee83121620d15c8e29}{}\label{group__i8254_ga84be9dcfa5a172ee83121620d15c8e29}
+
+\item 
+\#define {\bfseries H\+O\+U\+RS}~4\hypertarget{group__i8254_ga212d0f839f6f7ca43ccde311f93d5892}{}\label{group__i8254_ga212d0f839f6f7ca43ccde311f93d5892}
+
+\item 
+\#define {\bfseries D\+AY}~7\hypertarget{group__i8254_ga509a01c55cbe47386fe24602b7c7fda1}{}\label{group__i8254_ga509a01c55cbe47386fe24602b7c7fda1}
+
+\item 
+\#define {\bfseries M\+O\+N\+TH}~8\hypertarget{group__i8254_ga3729d06495d9713592f79f3122c9e677}{}\label{group__i8254_ga3729d06495d9713592f79f3122c9e677}
+
+\item 
+\#define {\bfseries Y\+E\+AR}~9\hypertarget{group__i8254_ga5871356500f559add06ea81d60331b1b}{}\label{group__i8254_ga5871356500f559add06ea81d60331b1b}
+
+\item 
+\#define {\bfseries U\+IP}~B\+IT(7)\hypertarget{group__i8254_ga3289eebd69837790d4aacaccd18d46db}{}\label{group__i8254_ga3289eebd69837790d4aacaccd18d46db}
+
+\item 
+\#define {\bfseries B\+C\+D\+\_\+\+B\+IT}~B\+IT(2)\hypertarget{group__i8254_gabc3ccea5c61ba5936cec1ad29f8472ad}{}\label{group__i8254_gabc3ccea5c61ba5936cec1ad29f8472ad}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Constants for programming the i8254 \hyperlink{structTimer}{Timer}. Needs to be completed. 

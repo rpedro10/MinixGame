@@ -1,0 +1,20 @@
+
+Bitmap.o:	/usr/include/limits.h
+Bitmap.o:	/usr/include/minix/dir.h
+Bitmap.o:	/usr/include/minix/limits.h
+Bitmap.o:	/usr/include/minix/sys_config.h
+Bitmap.o:	/usr/include/minix/types.h
+Bitmap.o:	/usr/include/stdint.h
+Bitmap.o:	/usr/include/sys/cdefs.h
+Bitmap.o:	/usr/include/sys/null.h
+Bitmap.o:	/usr/pkg/gcc44/lib/gcc/i686-pc-minix/4.4.3/include-fixed/ansi.h
+Bitmap.o:	/usr/pkg/gcc44/lib/gcc/i686-pc-minix/4.4.3/include-fixed/limits.h
+Bitmap.o:	/usr/pkg/gcc44/lib/gcc/i686-pc-minix/4.4.3/include-fixed/stdio.h
+Bitmap.o:	/usr/pkg/gcc44/lib/gcc/i686-pc-minix/4.4.3/include-fixed/stdlib.h
+Bitmap.o:	/usr/pkg/gcc44/lib/gcc/i686-pc-minix/4.4.3/include-fixed/string.h
+Bitmap.o:	/usr/pkg/gcc44/lib/gcc/i686-pc-minix/4.4.3/include-fixed/syslimits.h
+Bitmap.o:	/usr/pkg/gcc44/lib/gcc/i686-pc-minix/4.4.3/include/stdarg.h
+Bitmap.o:	Bitmap.c
+Bitmap.o:	Bitmap.h
+Bitmap.o:	i8254.h
+Bitmap.o:	video_gr.h

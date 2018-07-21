@@ -1,0 +1,23 @@
+#ifndef _GAMESTATE_H
+#define _GAMESTATE_H
+
+#include "Bitmap.h"
+
+typedef struct {
+	int done;
+
+	int backgroundX;
+	Bitmap* background;
+	Bitmap* back;
+
+	Mario* mario;
+
+} GameState;
+
+GameState* newGameState();
+void moveBackground(GameState* state);
+void updateGameState(GameState* state, unsigned long scancode);
+void drawGameState(GameState* state);
+void deleteGameState(GameState* state);
+
+#endif

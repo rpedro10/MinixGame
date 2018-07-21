@@ -1,0 +1,29 @@
+#pragma once
+
+# include "Bitmap.h"
+#include "timer.h"
+#include "i8254.h"
+
+
+typedef struct {
+	int kbd_irq;
+	int timer_irq;
+	int done;
+	int draw;
+	unsigned long scancode;
+	Bitmap* background;
+
+	int x;
+	int y;
+	int size;
+
+	Timer* timer;
+
+
+}Mario;
+
+Mario* createMario();
+void updateMario(Mario* game);
+void drawMario(Mario* game);
+void deleteMario(Mario* game);
+

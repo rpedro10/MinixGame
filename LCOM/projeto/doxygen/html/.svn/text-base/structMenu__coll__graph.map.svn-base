@@ -1,0 +1,10 @@
+<map id="Menu" name="Menu">
+<area shape="rect" id="node2" href="$structMouse.html" title="Mouse" alt="" coords="141,261,203,287"/>
+<area shape="rect" id="node3" href="$structBitmap.html" title="Bitmap" alt="" coords="197,95,259,121"/>
+<area shape="rect" id="node6" href="$structGameState.html" title="GameState" alt="" coords="321,335,409,361"/>
+<area shape="rect" id="node8" href="$structMario.html" title="Mario" alt="" coords="297,185,351,212"/>
+<area shape="rect" id="node4" href="$structBitmapInfoHeader.html" title="BitmapInfoHeader" alt="" coords="165,5,291,32"/>
+<area shape="rect" id="node5" href="$structScore.html" title="Score" alt="" coords="213,185,269,212"/>
+<area shape="rect" id="node7" href="$structPipe.html" title="Pipe" alt="" coords="377,185,425,212"/>
+<area shape="rect" id="node9" href="$structTimer.html" title="Timer" alt="" coords="434,335,489,361"/>
+</map>

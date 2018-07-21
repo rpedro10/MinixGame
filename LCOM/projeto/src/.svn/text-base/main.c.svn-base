@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <time.h>
+#include <stdlib.h>
+#include <minix/drivers.h>
+
+#include "video_gr.h"
+#include "Mario.h"
+
+int main(int argc, char **argv) {
+	/* Initialize service */
+	sef_startup();
+
+	sys_enable_iop(SELF);
+
+	Mario* mario = (Mario*) createMario();
+	vg_init(0x105);
+	int i = 0;
+
+	drawMario(mario);
+	while (!mario->done) {
+		updateMario(mario);
+		clear_screen(3);
+		drawMario(mario);
+		i++;
+
+	}
+//sleep(3);
+
+	deleteMario(mario);
+
+
+	vg_exit();
+
+
+
+	return 0;
+
+}

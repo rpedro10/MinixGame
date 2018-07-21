@@ -1,0 +1,27 @@
+
+GameState.o:	/usr/include/limits.h
+GameState.o:	/usr/include/minix/dir.h
+GameState.o:	/usr/include/minix/limits.h
+GameState.o:	/usr/include/minix/sys_config.h
+GameState.o:	/usr/include/minix/types.h
+GameState.o:	/usr/include/stdint.h
+GameState.o:	/usr/include/sys/cdefs.h
+GameState.o:	/usr/include/sys/null.h
+GameState.o:	/usr/pkg/gcc44/lib/gcc/i686-pc-minix/4.4.3/include-fixed/ansi.h
+GameState.o:	/usr/pkg/gcc44/lib/gcc/i686-pc-minix/4.4.3/include-fixed/limits.h
+GameState.o:	/usr/pkg/gcc44/lib/gcc/i686-pc-minix/4.4.3/include-fixed/stdio.h
+GameState.o:	/usr/pkg/gcc44/lib/gcc/i686-pc-minix/4.4.3/include-fixed/stdlib.h
+GameState.o:	/usr/pkg/gcc44/lib/gcc/i686-pc-minix/4.4.3/include-fixed/string.h
+GameState.o:	/usr/pkg/gcc44/lib/gcc/i686-pc-minix/4.4.3/include-fixed/syslimits.h
+GameState.o:	/usr/pkg/gcc44/lib/gcc/i686-pc-minix/4.4.3/include/stdarg.h
+GameState.o:	Bitmap.h
+GameState.o:	GameState.c
+GameState.o:	GameState.h
+GameState.o:	Mario.h
+GameState.o:	Pipe.h
+GameState.o:	Score.h
+GameState.o:	Utilities.h
+GameState.o:	i8254.h
+GameState.o:	kbd.h
+GameState.o:	timer.h
+GameState.o:	video_gr.h

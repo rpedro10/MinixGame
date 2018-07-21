@@ -1,0 +1,5 @@
+var searchData=
+[
+  ['deletebitmap',['deleteBitmap',['../group__Bitmap.html#ga08c1d4f4fff81df260d979ea8fc1aa61',1,'deleteBitmap(Bitmap *bmp):&#160;Bitmap.c'],['../group__Bitmap.html#ga08c1d4f4fff81df260d979ea8fc1aa61',1,'deleteBitmap(Bitmap *bmp):&#160;Bitmap.c']]],
+  ['drawbitmap',['drawBitmap',['../group__Bitmap.html#ga7519704e8e57a10120d4b3a22b08e115',1,'drawBitmap(char *destination, Bitmap *bmp, int x, int y, Alignment alignment):&#160;Bitmap.c'],['../group__Bitmap.html#ga7519704e8e57a10120d4b3a22b08e115',1,'drawBitmap(char *destination, Bitmap *bitmap, int x, int y, Alignment alignment):&#160;Bitmap.c']]]
+];

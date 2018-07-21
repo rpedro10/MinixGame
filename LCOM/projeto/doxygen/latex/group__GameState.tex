@@ -1,0 +1,153 @@
+\hypertarget{group__GameState}{}\section{Game\+State}
+\label{group__GameState}\index{Game\+State@{Game\+State}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structGameState}{Game\+State}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structGameState}{Game\+State} $\ast$ \hyperlink{group__GameState_ga2d35723c842bd85a0d7f270f549a377c}{new\+Game\+State} ()
+\begin{DoxyCompactList}\small\item\em Constructs a \hyperlink{structGameState}{Game\+State}. \end{DoxyCompactList}\item 
+int \hyperlink{group__GameState_gaea0343fd6d23e452a026f4ed0453307d}{check\+Collision} (\hyperlink{structGameState}{Game\+State} $\ast$state)
+\begin{DoxyCompactList}\small\item\em Checks if \hyperlink{structMario}{Mario} collides with pipes. \end{DoxyCompactList}\item 
+void {\bfseries update\+Game\+State} (\hyperlink{structGameState}{Game\+State} $\ast$state)\hypertarget{group__GameState_gadc42f4e0ed57559aa9e3750bc6bca90b}{}\label{group__GameState_gadc42f4e0ed57559aa9e3750bc6bca90b}
+
+\item 
+void \hyperlink{group__GameState_ga4e3e427d794bafe2e813da177c4b4801}{update\+Game\+State\+Kbd} (\hyperlink{structGameState}{Game\+State} $\ast$state, unsigned long scancode)
+\begin{DoxyCompactList}\small\item\em Updates \hyperlink{structGameState}{Game\+State} at keyboard interrupt. \end{DoxyCompactList}\item 
+void {\bfseries draw\+Game\+State} (\hyperlink{structGameState}{Game\+State} $\ast$state)\hypertarget{group__GameState_ga2fdfe5b9baa5720b6ecf554b02484458}{}\label{group__GameState_ga2fdfe5b9baa5720b6ecf554b02484458}
+
+\item 
+void {\bfseries delete\+Game\+State} (\hyperlink{structGameState}{Game\+State} $\ast$state)\hypertarget{group__GameState_ga9bb21c9548ad7822e7db855481317c05}{}\label{group__GameState_ga9bb21c9548ad7822e7db855481317c05}
+
+\item 
+void {\bfseries draw\+Pipes} (\hyperlink{structGameState}{Game\+State} $\ast$state)\hypertarget{group__GameState_gadc30ea2223223ab0e27daccd6e57fdab}{}\label{group__GameState_gadc30ea2223223ab0e27daccd6e57fdab}
+
+\item 
+void \hyperlink{group__GameState_ga960e38fbbbc119878704a2f633211108}{update\+Pipes} (\hyperlink{structGameState}{Game\+State} $\ast$state)
+\begin{DoxyCompactList}\small\item\em Updates the pipes. \end{DoxyCompactList}\item 
+void {\bfseries shift\+Pipes\+Left} (\hyperlink{structGameState}{Game\+State} $\ast$state)\hypertarget{group__GameState_ga49f81c06d345d16a7b880bad72ab5bd7}{}\label{group__GameState_ga49f81c06d345d16a7b880bad72ab5bd7}
+
+\item 
+void {\bfseries delete\+Pipes} (\hyperlink{structGameState}{Game\+State} $\ast$state)\hypertarget{group__GameState_gac91fdcc3e45c017117f8dd5cb2928373}{}\label{group__GameState_gac91fdcc3e45c017117f8dd5cb2928373}
+
+\item 
+void {\bfseries draw\+Score\+Gamestate} (\hyperlink{structGameState}{Game\+State} $\ast$state)\hypertarget{group__GameState_gaee253d193f21c335d237dd9cbb82056b}{}\label{group__GameState_gaee253d193f21c335d237dd9cbb82056b}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Struct the controls the flow of the game itself 
+
+\subsection{Function Documentation}
+\index{Game\+State@{Game\+State}!check\+Collision@{check\+Collision}}
+\index{check\+Collision@{check\+Collision}!Game\+State@{Game\+State}}
+\subsubsection[{\texorpdfstring{check\+Collision(\+Game\+State $\ast$state)}{checkCollision(GameState *state)}}]{\setlength{\rightskip}{0pt plus 5cm}int check\+Collision (
+\begin{DoxyParamCaption}
+\item[{{\bf Game\+State} $\ast$}]{state}
+\end{DoxyParamCaption}
+)}\hypertarget{group__GameState_gaea0343fd6d23e452a026f4ed0453307d}{}\label{group__GameState_gaea0343fd6d23e452a026f4ed0453307d}
+
+
+Checks if \hyperlink{structMario}{Mario} collides with pipes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & The \hyperlink{structGameState}{Game\+State}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if is colliding and 0 otherwise 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{group__GameState_gaea0343fd6d23e452a026f4ed0453307d_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Game\+State@{Game\+State}!new\+Game\+State@{new\+Game\+State}}
+\index{new\+Game\+State@{new\+Game\+State}!Game\+State@{Game\+State}}
+\subsubsection[{\texorpdfstring{new\+Game\+State()}{newGameState()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Game\+State}$\ast$ new\+Game\+State (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{group__GameState_ga2d35723c842bd85a0d7f270f549a377c}{}\label{group__GameState_ga2d35723c842bd85a0d7f270f549a377c}
+
+
+Constructs a \hyperlink{structGameState}{Game\+State}. 
+
+\begin{DoxyReturn}{Returns}
+A pointer to the \hyperlink{structGameState}{Game\+State} 
+\end{DoxyReturn}
+\index{Game\+State@{Game\+State}!update\+Game\+State\+Kbd@{update\+Game\+State\+Kbd}}
+\index{update\+Game\+State\+Kbd@{update\+Game\+State\+Kbd}!Game\+State@{Game\+State}}
+\subsubsection[{\texorpdfstring{update\+Game\+State\+Kbd(\+Game\+State $\ast$state, unsigned long scancode)}{updateGameStateKbd(GameState *state, unsigned long scancode)}}]{\setlength{\rightskip}{0pt plus 5cm}void update\+Game\+State\+Kbd (
+\begin{DoxyParamCaption}
+\item[{{\bf Game\+State} $\ast$}]{state, }
+\item[{unsigned long}]{scancode}
+\end{DoxyParamCaption}
+)}\hypertarget{group__GameState_ga4e3e427d794bafe2e813da177c4b4801}{}\label{group__GameState_ga4e3e427d794bafe2e813da177c4b4801}
+
+
+Updates \hyperlink{structGameState}{Game\+State} at keyboard interrupt. 
+
+Updates \hyperlink{structMario}{Mario} at keyboard interrupt and passed the scancode passed by the menu
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em state} & The \hyperlink{structGameState}{Game\+State} \\
+\hline
+\mbox{\tt in}  & {\em scancode} & The keyboard scancode passed by the menu \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=349pt]{group__GameState_ga4e3e427d794bafe2e813da177c4b4801_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Game\+State@{Game\+State}!update\+Pipes@{update\+Pipes}}
+\index{update\+Pipes@{update\+Pipes}!Game\+State@{Game\+State}}
+\subsubsection[{\texorpdfstring{update\+Pipes(\+Game\+State $\ast$state)}{updatePipes(GameState *state)}}]{\setlength{\rightskip}{0pt plus 5cm}void update\+Pipes (
+\begin{DoxyParamCaption}
+\item[{{\bf Game\+State} $\ast$}]{state}
+\end{DoxyParamCaption}
+)}\hypertarget{group__GameState_ga960e38fbbbc119878704a2f633211108}{}\label{group__GameState_ga960e38fbbbc119878704a2f633211108}
+
+
+Updates the pipes. 
+
+If mario has passed the pipe, then assigns 1 to crossed member variable of \hyperlink{structPipe}{Pipe}. If the left-\/most pipe touches the left side of the screen then
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & The gamestate \\
+\hline
+\end{DoxyParams}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=271pt]{group__GameState_ga960e38fbbbc119878704a2f633211108_icgraph}
+\end{center}
+\end{figure}
+
+

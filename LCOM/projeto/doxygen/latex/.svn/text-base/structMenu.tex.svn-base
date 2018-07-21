@@ -1,0 +1,88 @@
+\hypertarget{structMenu}{}\section{Menu Struct Reference}
+\label{structMenu}\index{Menu@{Menu}}
+
+
+Collaboration diagram for Menu\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structMenu__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries current\+\_\+state}\hypertarget{structMenu_af5a96283eb3fcd309e7669eb11fc0723}{}\label{structMenu_af5a96283eb3fcd309e7669eb11fc0723}
+
+\item 
+char $\ast$ {\bfseries video\+\_\+mem}\hypertarget{structMenu_a80b884d6ba518e2aaf394d7610ac5ef4}{}\label{structMenu_a80b884d6ba518e2aaf394d7610ac5ef4}
+
+\item 
+char $\ast$ {\bfseries double\+\_\+buf}\hypertarget{structMenu_a848a585b394d3469c3201ef9a17b5df7}{}\label{structMenu_a848a585b394d3469c3201ef9a17b5df7}
+
+\item 
+char $\ast$ {\bfseries background\+\_\+buf}\hypertarget{structMenu_a69746dd4ac7c76d1eae9a8e68df1d0c5}{}\label{structMenu_a69746dd4ac7c76d1eae9a8e68df1d0c5}
+
+\item 
+char $\ast$ {\bfseries about\+\_\+buf}\hypertarget{structMenu_a613b9a5b6f1901ea7822770066158de5}{}\label{structMenu_a613b9a5b6f1901ea7822770066158de5}
+
+\item 
+char $\ast$ {\bfseries game\+\_\+over\+\_\+buf}\hypertarget{structMenu_aff9f3dbaf009458436de8073c75e0add}{}\label{structMenu_aff9f3dbaf009458436de8073c75e0add}
+
+\item 
+char $\ast$ {\bfseries high\+\_\+score\+\_\+buf}\hypertarget{structMenu_a2852ccdfeadd1fa197b26256aac48464}{}\label{structMenu_a2852ccdfeadd1fa197b26256aac48464}
+
+\item 
+\hyperlink{structGameState}{Game\+State} $\ast$ {\bfseries gamestate}\hypertarget{structMenu_a8f37305b3ff2904bfb9cb1f91a9b7ce1}{}\label{structMenu_a8f37305b3ff2904bfb9cb1f91a9b7ce1}
+
+\item 
+\hyperlink{structScore}{Score} $\ast$ {\bfseries high\+\_\+scores} \mbox{[}6\mbox{]}\hypertarget{structMenu_a9c1889a4d8a16ecb6c557258cf84897f}{}\label{structMenu_a9c1889a4d8a16ecb6c557258cf84897f}
+
+\item 
+\hyperlink{structMouse}{Mouse} $\ast$ {\bfseries mouse}\hypertarget{structMenu_a297aca0913c4ffadaf3848b5914e78ee}{}\label{structMenu_a297aca0913c4ffadaf3848b5914e78ee}
+
+\item 
+\hyperlink{structTimer}{Timer} $\ast$ {\bfseries timer}\hypertarget{structMenu_a6345b63b899f46defb8ad61fdf000c00}{}\label{structMenu_a6345b63b899f46defb8ad61fdf000c00}
+
+\item 
+int {\bfseries timer\+\_\+irq}\hypertarget{structMenu_abbc34ac236d2d57a45a856402d8e3f1b}{}\label{structMenu_abbc34ac236d2d57a45a856402d8e3f1b}
+
+\item 
+int {\bfseries kbd\+\_\+irq}\hypertarget{structMenu_a354e72a664d417dd79557bff5beb1c65}{}\label{structMenu_a354e72a664d417dd79557bff5beb1c65}
+
+\item 
+unsigned long {\bfseries scancode}\hypertarget{structMenu_ae9efd9d3d5e409c34f0b58b095103c86}{}\label{structMenu_ae9efd9d3d5e409c34f0b58b095103c86}
+
+\item 
+int {\bfseries done}\hypertarget{structMenu_a457588a82fea9415b58c5b9ee2595e88}{}\label{structMenu_a457588a82fea9415b58c5b9ee2595e88}
+
+\item 
+int {\bfseries draw\+Size}\hypertarget{structMenu_a45c1b1aff3e0462d504bc4cd4bb92f51}{}\label{structMenu_a45c1b1aff3e0462d504bc4cd4bb92f51}
+
+\item 
+\hyperlink{structBitmap}{Bitmap} $\ast$ {\bfseries background}\hypertarget{structMenu_a557df5703b8c0a3a4096652ab49dcbf4}{}\label{structMenu_a557df5703b8c0a3a4096652ab49dcbf4}
+
+\item 
+\hyperlink{structBitmap}{Bitmap} $\ast$ {\bfseries about}\hypertarget{structMenu_a77bac3c0112d559bf29b4efa127bf274}{}\label{structMenu_a77bac3c0112d559bf29b4efa127bf274}
+
+\item 
+\hyperlink{structBitmap}{Bitmap} $\ast$ {\bfseries game\+\_\+over}\hypertarget{structMenu_a72d373e429b2128f377da31eb0a5883f}{}\label{structMenu_a72d373e429b2128f377da31eb0a5883f}
+
+\item 
+\hyperlink{structBitmap}{Bitmap} $\ast$ {\bfseries high\+\_\+score\+\_\+bitmap}\hypertarget{structMenu_ad58d6c50745792c796c8530eaf0e5118}{}\label{structMenu_ad58d6c50745792c796c8530eaf0e5118}
+
+\item 
+\hyperlink{structBitmap}{Bitmap} $\ast$ {\bfseries lettersandnumbers} \mbox{[}38\mbox{]}\hypertarget{structMenu_afb3648c7b0f7daca6b145aca4ef5655b}{}\label{structMenu_afb3648c7b0f7daca6b145aca4ef5655b}
+
+\item 
+int {\bfseries index} \mbox{[}3\mbox{]}\hypertarget{structMenu_ac1b1b1910d8a2190336d4e52681d896f}{}\label{structMenu_ac1b1b1910d8a2190336d4e52681d896f}
+
+\item 
+int {\bfseries flashing} \mbox{[}3\mbox{]}\hypertarget{structMenu_ad36d71ee33538da42e648cd241598dbe}{}\label{structMenu_ad36d71ee33538da42e648cd241598dbe}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/pedro/\+Desktop/svn/src/Menu.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,58 @@
+\hypertarget{structMouse}{}\section{Mouse Struct Reference}
+\label{structMouse}\index{Mouse@{Mouse}}
+
+
+Collaboration diagram for Mouse\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=209pt]{structMouse__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$ {\bfseries mouse\+\_\+buf}\hypertarget{structMouse_a4e2cdc6360a1a6f44c488984f701e3c1}{}\label{structMouse_a4e2cdc6360a1a6f44c488984f701e3c1}
+
+\item 
+int {\bfseries draw\+Size}\hypertarget{structMouse_a2f336c5b976d203e94cfd39cdb605bd4}{}\label{structMouse_a2f336c5b976d203e94cfd39cdb605bd4}
+
+\item 
+int {\bfseries x}\hypertarget{structMouse_a136eea114b70f46392b89cc3779d4291}{}\label{structMouse_a136eea114b70f46392b89cc3779d4291}
+
+\item 
+int {\bfseries y}\hypertarget{structMouse_a4a29b1c18faaa2fbe39ff985ba9d6737}{}\label{structMouse_a4a29b1c18faaa2fbe39ff985ba9d6737}
+
+\item 
+int {\bfseries LB}\hypertarget{structMouse_a6ffdaafd5ac181e36e9ad74dc3c188eb}{}\label{structMouse_a6ffdaafd5ac181e36e9ad74dc3c188eb}
+
+\item 
+int {\bfseries MB}\hypertarget{structMouse_a6cfe8944be29ae37eff39729e6436d64}{}\label{structMouse_a6cfe8944be29ae37eff39729e6436d64}
+
+\item 
+int {\bfseries RB}\hypertarget{structMouse_afcc1ce6eeeb2d0fdb1664868ddb8330f}{}\label{structMouse_afcc1ce6eeeb2d0fdb1664868ddb8330f}
+
+\item 
+int {\bfseries click}\hypertarget{structMouse_ab94f98917e206163310ad54883f2bae2}{}\label{structMouse_ab94f98917e206163310ad54883f2bae2}
+
+\item 
+int {\bfseries mouse\+\_\+irq}\hypertarget{structMouse_aa0b20b3b71144384f4c8f2dc5e4c17db}{}\label{structMouse_aa0b20b3b71144384f4c8f2dc5e4c17db}
+
+\item 
+unsigned long {\bfseries packet} \mbox{[}3\mbox{]}\hypertarget{structMouse_a8bfb0c35eb14423f5086a355d52dc733}{}\label{structMouse_a8bfb0c35eb14423f5086a355d52dc733}
+
+\item 
+int {\bfseries contador}\hypertarget{structMouse_a8dc967db73702ddb693145652f10071b}{}\label{structMouse_a8dc967db73702ddb693145652f10071b}
+
+\item 
+int {\bfseries currlength}\hypertarget{structMouse_a5db413bdb085f7618c43c4740d8058dd}{}\label{structMouse_a5db413bdb085f7618c43c4740d8058dd}
+
+\item 
+\hyperlink{structBitmap}{Bitmap} $\ast$ {\bfseries pointer}\hypertarget{structMouse_ab0790e9d4a70b93662c60313b61ce9b7}{}\label{structMouse_ab0790e9d4a70b93662c60313b61ce9b7}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/pedro/\+Desktop/svn/src/mouse.\+h\end{DoxyCompactItemize}

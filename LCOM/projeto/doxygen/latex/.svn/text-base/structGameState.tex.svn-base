@@ -1,0 +1,55 @@
+\hypertarget{structGameState}{}\section{Game\+State Struct Reference}
+\label{structGameState}\index{Game\+State@{Game\+State}}
+
+
+Collaboration diagram for Game\+State\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=323pt]{structGameState__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$ {\bfseries video\+\_\+mem}\hypertarget{structGameState_a3042ccc446fe225dbe77074487ecd53f}{}\label{structGameState_a3042ccc446fe225dbe77074487ecd53f}
+
+\item 
+char $\ast$ {\bfseries double\+\_\+buf}\hypertarget{structGameState_abc42b430205d4a2ce2d1d658fbc6f158}{}\label{structGameState_abc42b430205d4a2ce2d1d658fbc6f158}
+
+\item 
+char $\ast$ {\bfseries background\+\_\+buf}\hypertarget{structGameState_a0822546bf86ffc9bdb6fd949a71a2007}{}\label{structGameState_a0822546bf86ffc9bdb6fd949a71a2007}
+
+\item 
+int {\bfseries draw\+Size}\hypertarget{structGameState_a536cfc96a8a06a19978e632566ed2b6d}{}\label{structGameState_a536cfc96a8a06a19978e632566ed2b6d}
+
+\item 
+int {\bfseries backgroundX}\hypertarget{structGameState_aac68b4a3fbb01a1cd632707ba8fa9571}{}\label{structGameState_aac68b4a3fbb01a1cd632707ba8fa9571}
+
+\item 
+\hyperlink{structBitmap}{Bitmap} $\ast$ {\bfseries background}\hypertarget{structGameState_a601ca6dec87291b4a062c9145c484643}{}\label{structGameState_a601ca6dec87291b4a062c9145c484643}
+
+\item 
+\hyperlink{structMario}{Mario} $\ast$ {\bfseries mario}\hypertarget{structGameState_ac52c9372fbc9620dfc5a716ecf577ade}{}\label{structGameState_ac52c9372fbc9620dfc5a716ecf577ade}
+
+\item 
+\hyperlink{structScore}{Score} $\ast$ {\bfseries score}\hypertarget{structGameState_aef89bf07a07784b9058ed9e54b5ad56c}{}\label{structGameState_aef89bf07a07784b9058ed9e54b5ad56c}
+
+\item 
+int {\bfseries num\+\_\+pipes}\hypertarget{structGameState_a1593992cc93b3aa866df33c4d544cc64}{}\label{structGameState_a1593992cc93b3aa866df33c4d544cc64}
+
+\item 
+int {\bfseries space\+\_\+between\+\_\+pipes}\hypertarget{structGameState_a2eb377e943f0ea2dc9a6a51a97d65045}{}\label{structGameState_a2eb377e943f0ea2dc9a6a51a97d65045}
+
+\item 
+\hyperlink{structPipe}{Pipe} $\ast$ {\bfseries pipes} \mbox{[}5\mbox{]}\hypertarget{structGameState_a2bb061e8297de507a9f475007679e478}{}\label{structGameState_a2bb061e8297de507a9f475007679e478}
+
+\item 
+\hyperlink{structBitmap}{Bitmap} $\ast$ {\bfseries digits} \mbox{[}10\mbox{]}\hypertarget{structGameState_af735b59e0ecf405eefdccc92b333ee68}{}\label{structGameState_af735b59e0ecf405eefdccc92b333ee68}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/pedro/\+Desktop/svn/src/Game\+State.\+h\end{DoxyCompactItemize}

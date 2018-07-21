@@ -1,0 +1,125 @@
+#include <stdio.h>
+//#include <timer.h>
+#include <stdlib.h>
+//#include <minix/drivers.h>
+
+//#include <minix/drivers.h>
+
+#include <minix/sysutil.h>
+#include <minix/syslib.h>
+#include <minix/drivers.h>
+#include <minix/driver.h>
+
+#include <stdint.h>
+#include <machine/int86.h>
+
+#include "video_gr.h"
+#include "Mario.h"
+
+#include "GameState.h"
+
+int main(int argc, char **argv) {
+	/* Initialize service */
+	sef_startup();
+
+	sys_enable_iop(SELF);
+
+	vg_init(0x117); // 0x105 = 1024x768 256 colours, 0x117 = 1024x768 16-bit colours 
+
+	Mario* mario = (Mario*) createMario();
+
+	int ipc_status;
+	message msg;
+	int r;
+
+	int dummy;
+
+	while (mario->scancode != KEY_ESC) { /* You may want to use a different condition */
+		/* Get a request message. */
+		if ((r = driver_receive(ANY, &msg, &ipc_status)) != 0) {
+			printf("driver_receive failed with: %d\n", r);
+			continue;
+		}
+		if (is_ipc_notify(ipc_status)) { /* received notification */
+			switch (_ENDPOINT_P(msg.m_source)) {
+			case HARDWARE: /* hardware interrupt notification */
+				if (msg.NOTIFY_ARG & mario->timer_irq) {
+					if (mario->currentState == MAIN_MENU_STATE) {
+						// TODO MAIN_MENU
+					} else if (mario->currentState == GAME_STATE) {
+						//clear_screen(3);
+						drawGameState(mario-> state);
+						timerHandler(mario->timer);
+						updateMario(mario);
+						drawMario(mario);
+					//	updateGameState(mario->state, mario->scancode);
+					}
+				}
+				if (msg.NOTIFY_ARG & mario->kbd_irq) { /* subscribed interrupt */
+
+					if (mario->currentState == MAIN_MENU_STATE) {
+						// TODO MAIN_MENU
+					} else if (mario->currentState == GAME_STATE) {
+					//	drawGameState(mario-> state);
+						mario->scancode = kbd_handler_scan();
+						print_code(mario->scancode, &dummy);
+						updateMarioKbd(mario);
+						updateGameState(mario->state, mario->scancode);
+					}
+				}
+
+				break;
+			default:
+				break; /* no other notifications expected: do nothing */
+			}
+
+		}
+
+	}
+
+	 deleteGameState(mario->state);
+	 deleteMario(mario);
+
+	//clear_screen(900);
+	printf("exit2 \n");
+
+	//draw_square(0,0,20,999);
+
+	// unsigned long scancode;
+
+	// int kbd_irq = kbd_subscribe_int();
+
+	// while (scancode != KEY_ESC) { /* You may want to use a different condition */
+	// 	/* Get a request message. */
+	// 	if ((r = driver_receive(ANY, &msg, &ipc_status)) != 0) {
+	// 		printf("driver_receive failed with: %d\n", r);
+	// 		continue;
+	// 	}
+	// 	if (is_ipc_notify(ipc_status)) { /* received notification */
+	// 		switch (_ENDPOINT_P(msg.m_source)) {
+	// 		case HARDWARE: /* hardware interrupt notification */
+	// 			if (msg.NOTIFY_ARG & kbd_irq) { /* subscribed interrupt */
+	// 				scancode = kbd_handler_scan();
+	// 			}
+
+	// 			break;
+	// 		default:
+	// 			break; /* no other notifications expected: do nothing */
+	// 		}
+
+	// 	}
+
+	// }
+
+	vg_exit();
+
+	return 0;
+
+	// TO DO:
+	// 1 - Verificar porque e que o clear_screen da segmentation fault. No modo 0x117 deu erro em x = 1023 e y = 767. Meti para dar ate esse valor.
+	// 2 - Fazer o menu
+	// 3 - Ver o mario.size
+	// 4 - ver porque em certos momentos o fundo nao é desenahdo ( fica rasto do mario depois de ser movido)
+	// 5 - add pipes
+
+}

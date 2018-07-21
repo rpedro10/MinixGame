@@ -1,0 +1,38 @@
+#ifndef _MARIO_H
+#define _MARIO_H
+
+<<<<<<< .mine
+
+# include "Bitmap.h"
+=======
+#include "Bitmap.h"
+>>>>>>> .r113
+#include "timer.h"
+#include "kbd.h"
+#include "i8254.h"
+
+
+typedef struct {
+	int kbd_irq;
+	int timer_irq;
+	int done;
+	int draw;
+	unsigned long scancode;
+	Bitmap* background;
+
+	int x;
+	int y;
+	int size;
+
+	Timer* timer;
+
+
+}Mario;
+
+Mario* createMario();
+void updateMario(Mario* game);
+void drawMario(Mario* game);
+void deleteMario(Mario* game);
+
+
+#endif

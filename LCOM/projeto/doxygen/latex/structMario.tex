@@ -1,0 +1,82 @@
+\hypertarget{structMario}{}\section{Mario Struct Reference}
+\label{structMario}\index{Mario@{Mario}}
+
+
+{\ttfamily \#include $<$Mario.\+h$>$}
+
+
+
+Collaboration diagram for Mario\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=209pt]{structMario__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$ {\bfseries mario\+\_\+buf}\hypertarget{structMario_a87ef03068e4b27222a4382f16d6737cd}{}\label{structMario_a87ef03068e4b27222a4382f16d6737cd}
+
+\item 
+int \hyperlink{structMario_ac356a194a42781bd6860663fda999834}{done}
+\item 
+int \hyperlink{structMario_a9c9f2d2e801d1680b64dfa627c713042}{draw}
+\item 
+\hyperlink{structBitmap}{Bitmap} $\ast$ \hyperlink{structMario_a6e36b388e2610cb9af195f05a5e0d93a}{background}
+\item 
+int \hyperlink{structMario_ac2d3305a2cc90782a8d37379ba6cdf7b}{x}
+\item 
+int \hyperlink{structMario_aaf89af6928473a3413248355270bf064}{y}
+\item 
+int \hyperlink{structMario_ac8a021d67049cc6c3a58892cbf3a16f9}{size}
+\item 
+int \hyperlink{structMario_a25bf8be536577d81da72c7272090ade7}{draw\+Size}
+\item 
+int \hyperlink{structMario_afd661aa7602503cbf9a4d33459627e91}{jump\+\_\+height}
+\item 
+int \hyperlink{structMario_aa915b2e693536ff0d976983a33c51675}{ascending}
+\item 
+int \hyperlink{structMario_afc7f287b9c802a0206696e99856f3ebf}{lower\+\_\+bound}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represents the Charater Super M\+Ario 
+
+\subsection{Member Data Documentation}
+\index{Mario@{Mario}!ascending@{ascending}}
+\index{ascending@{ascending}!Mario@{Mario}}
+\subsubsection[{\texorpdfstring{ascending}{ascending}}]{\setlength{\rightskip}{0pt plus 5cm}int Mario\+::ascending}\hypertarget{structMario_aa915b2e693536ff0d976983a33c51675}{}\label{structMario_aa915b2e693536ff0d976983a33c51675}
+jump\+\_\+height height of mario\textquotesingle{}s jump \index{Mario@{Mario}!background@{background}}
+\index{background@{background}!Mario@{Mario}}
+\subsubsection[{\texorpdfstring{background}{background}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Bitmap}$\ast$ Mario\+::background}\hypertarget{structMario_a6e36b388e2610cb9af195f05a5e0d93a}{}\label{structMario_a6e36b388e2610cb9af195f05a5e0d93a}
+1 if its supposed to be drawn \index{Mario@{Mario}!done@{done}}
+\index{done@{done}!Mario@{Mario}}
+\subsubsection[{\texorpdfstring{done}{done}}]{\setlength{\rightskip}{0pt plus 5cm}int Mario\+::done}\hypertarget{structMario_ac356a194a42781bd6860663fda999834}{}\label{structMario_ac356a194a42781bd6860663fda999834}
+mario\+\_\+buf pointer to mario \index{Mario@{Mario}!draw@{draw}}
+\index{draw@{draw}!Mario@{Mario}}
+\subsubsection[{\texorpdfstring{draw}{draw}}]{\setlength{\rightskip}{0pt plus 5cm}int Mario\+::draw}\hypertarget{structMario_a9c9f2d2e801d1680b64dfa627c713042}{}\label{structMario_a9c9f2d2e801d1680b64dfa627c713042}
+1 if dead \index{Mario@{Mario}!draw\+Size@{draw\+Size}}
+\index{draw\+Size@{draw\+Size}!Mario@{Mario}}
+\subsubsection[{\texorpdfstring{draw\+Size}{drawSize}}]{\setlength{\rightskip}{0pt plus 5cm}int Mario\+::draw\+Size}\hypertarget{structMario_a25bf8be536577d81da72c7272090ade7}{}\label{structMario_a25bf8be536577d81da72c7272090ade7}
+size size of pipe \index{Mario@{Mario}!jump\+\_\+height@{jump\+\_\+height}}
+\index{jump\+\_\+height@{jump\+\_\+height}!Mario@{Mario}}
+\subsubsection[{\texorpdfstring{jump\+\_\+height}{jump_height}}]{\setlength{\rightskip}{0pt plus 5cm}int Mario\+::jump\+\_\+height}\hypertarget{structMario_afd661aa7602503cbf9a4d33459627e91}{}\label{structMario_afd661aa7602503cbf9a4d33459627e91}
+draw\+Size size supposed to be drawn \index{Mario@{Mario}!lower\+\_\+bound@{lower\+\_\+bound}}
+\index{lower\+\_\+bound@{lower\+\_\+bound}!Mario@{Mario}}
+\subsubsection[{\texorpdfstring{lower\+\_\+bound}{lower_bound}}]{\setlength{\rightskip}{0pt plus 5cm}int Mario\+::lower\+\_\+bound}\hypertarget{structMario_afc7f287b9c802a0206696e99856f3ebf}{}\label{structMario_afc7f287b9c802a0206696e99856f3ebf}
+1 if jumping \index{Mario@{Mario}!size@{size}}
+\index{size@{size}!Mario@{Mario}}
+\subsubsection[{\texorpdfstring{size}{size}}]{\setlength{\rightskip}{0pt plus 5cm}int Mario\+::size}\hypertarget{structMario_ac8a021d67049cc6c3a58892cbf3a16f9}{}\label{structMario_ac8a021d67049cc6c3a58892cbf3a16f9}
+y coordinate y of mario \index{Mario@{Mario}!x@{x}}
+\index{x@{x}!Mario@{Mario}}
+\subsubsection[{\texorpdfstring{x}{x}}]{\setlength{\rightskip}{0pt plus 5cm}int Mario\+::x}\hypertarget{structMario_ac2d3305a2cc90782a8d37379ba6cdf7b}{}\label{structMario_ac2d3305a2cc90782a8d37379ba6cdf7b}
+background \hyperlink{structBitmap}{Bitmap} of the character \index{Mario@{Mario}!y@{y}}
+\index{y@{y}!Mario@{Mario}}
+\subsubsection[{\texorpdfstring{y}{y}}]{\setlength{\rightskip}{0pt plus 5cm}int Mario\+::y}\hypertarget{structMario_aaf89af6928473a3413248355270bf064}{}\label{structMario_aaf89af6928473a3413248355270bf064}
+x coordinate x of mario 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/rui/\+Desktop/projeto/src/Mario.\+h\end{DoxyCompactItemize}

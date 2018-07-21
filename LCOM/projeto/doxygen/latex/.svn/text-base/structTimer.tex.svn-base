@@ -1,0 +1,16 @@
+\hypertarget{structTimer}{}\section{Timer Struct Reference}
+\label{structTimer}\index{Timer@{Timer}}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries ticked}\hypertarget{structTimer_a6793f2bc8d6af06446591e8a8bc9e65c}{}\label{structTimer_a6793f2bc8d6af06446591e8a8bc9e65c}
+
+\item 
+unsigned long {\bfseries counter}\hypertarget{structTimer_a3b4321cf766b62d7cdf3fad0d5e25a91}{}\label{structTimer_a3b4321cf766b62d7cdf3fad0d5e25a91}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/pedro/\+Desktop/svn/src/timer.\+h\end{DoxyCompactItemize}
